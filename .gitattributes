@@ -1,0 +1,12 @@
+# All files as text by default
+* text eol=lf
+
+# Binary files
+*.dll   binary
+*.jpg   binary
+*.png   binary
+*.gif   binary
+
+# JS generated files
+yarn.lock linguist-generated=true
+package-lock.json linguist-generated=true
