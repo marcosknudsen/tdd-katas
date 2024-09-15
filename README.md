@@ -23,12 +23,14 @@ Este repositorio provee templates para varios katas en diferentes lenguajes, hay
 
 ### Como participar
 
-1. Clona el repositorio
-2. Selecciona un lenguaje y prepara una copia de `_copy_me` a una nueva carpeta con tu nombre según las instrucciones provistas para el lenguaje elegido.
-3. Por cada kata que desees hacer
+1. Crea un Fork del repositorio
+2. Clonalo en tu entorno local
+3. Selecciona un lenguaje y prepara una copia de `_copy_me` a una nueva carpeta con tu nombre según las instrucciones provistas para el lenguaje elegido.
+4. Por cada kata que desees hacer
    1. Completa el kata con un commit por cada paso
-   2. Crea un pull request para revisar tu aproximación
-   3. Haz el merge
+   2. Crea un pull request para revisar tu aproximación con los demás participantes
+   3. Aplica las correcciones según el feedback recibido
+   4. Espera el merge
 
 ## Katas
 
