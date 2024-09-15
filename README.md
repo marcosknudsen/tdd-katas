@@ -14,18 +14,16 @@ Lo que significa que el flujo de trabajo es:
 2. Escribe el código de producción mínimo necesario para que la prueba pase. Deja de escribir cualquier código una vez que la prueba pase.
 3. Refactoriza el código de la prueba y el código de producción sin alterar la funcionalidad. Todas las pruebas deben pasar.
 
-## Uso
+## Uso de este repositorio
 
-Para ejecutar las pruebas, ejecuta `npm test` o `npm run test:watch` para ejecutarlas continuamente.
+Este repositorio provee templates para varios katas en diferentes lenguajes, hay una carpeta para cada uno de ellos, cada una de ellas con las instrucciones correspondientes para preparar el entorno y ejecutar los tests.
 
-Se requiere Node v20.17.0 y ejecutar `npm install` previamente.
-
-Como alternativa, puede utilizarse Docker con el comando `docker build --progress=plain .`.
+- [TypeScript](./typescript/README.md)
 
 ### Como participar
 
 1. Clona el repositorio
-2. Copia la carpeta `src/_copy_me` a una nueva carpeta con tu nombre dentro de `src`
+2. Selecciona un lenguaje y prepara una copia de `_copy_me` a una nueva carpeta con tu nombre según las instrucciones provistas para el lenguaje elegido.
 3. Por cada kata que desees hacer
    1. Completa el kata con un commit por cada paso
    2. Crea un pull request para revisar tu aproximación

@@ -9,10 +9,6 @@ end_of_line = lf
 indent_size = 2
 max_line_length = 110
 
-[*.{js,ts}]
-block_comment_start = /*
-block_comment_end = */
-
 [{en.js,es.js,*.sh,*.md,Dockerfile,.editorconfig,package.json}]
 max_line_length = 130
 
@@ -21,8 +17,7 @@ indent_style = unset
 indent_size = unset
 max_line_length = unset
 
-# Unset for binary and generated files
-[{**.svg,**.png,**/obj/**,**/bin/**,.vscode/**,**/Properties/launchSettings.json,yarn.lock,package-lock.json,*.groovy,build/**,LICENSE}]
+[{**.svg,**.png,.vscode/**,LICENSE}]
 charset = unset
 end_of_line = unset
 insert_final_newline = unset
