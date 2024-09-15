@@ -10,3 +10,9 @@
 # JS generated files
 yarn.lock linguist-generated=true
 package-lock.json linguist-generated=true
+
+mvnw            text eol=lf
+*.java          text eol=lf
+
+/gradlew        text eol=lf
+*.bat           text eol=crlf

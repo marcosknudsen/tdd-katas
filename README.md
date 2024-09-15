@@ -19,6 +19,7 @@ Lo que significa que el flujo de trabajo es:
 Este repositorio provee templates para varios katas en diferentes lenguajes, hay una carpeta para cada uno de ellos, cada una de ellas con las instrucciones correspondientes para preparar el entorno y ejecutar los tests.
 
 - [TypeScript](./typescript/README.md)
+- [Java](./java/README.md)
 
 ### Como participar
 
