@@ -7,9 +7,14 @@ export class FizzBuzz {
   max: number;
   min: number;
 
+  setMax(max: number) {
+    this.max = max;
+  }
+
   generate() {
     return Array.from({ length: this.max - this.min + 1 }, (_,n) => {
-      
+      n += this.min;
+
       let multipleOf3 = n % 3 === 0;
       let multipleOf5 = n % 5 === 0;
 

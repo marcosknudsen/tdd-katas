@@ -21,7 +21,7 @@ describe(FizzBuzz, () => {
     const result = sut.generate();
 
     // Assert
-    expect(result[3]).toBe("Fizz");
+    expect(result[2]).toBe("Fizz");
   });
 
   it("should return 1", () => {
@@ -32,7 +32,7 @@ describe(FizzBuzz, () => {
     const result = sut.generate();
 
     // Assert
-    expect(result[1]).toBe(1);
+    expect(result[0]).toBe(1);
   });
 
   it("should return Buzz", () => {
@@ -43,7 +43,7 @@ describe(FizzBuzz, () => {
     const result = sut.generate();
 
     // Assert
-    expect(result[5]).toBe("Buzz");
+    expect(result[4]).toBe("Buzz");
   });
 
   it("should return FizzBuzz", () => {
@@ -54,6 +54,20 @@ describe(FizzBuzz, () => {
     const result = sut.generate();
 
     // Assert
-    expect(result[15]).toBe("FizzBuzz");
+    expect(result[14]).toBe("FizzBuzz");
+  });
+
+  it("should return an array with length 50", () => {
+    // Arrange
+    const sut = new FizzBuzz();
+    sut.setMax(50);
+    // Act
+    const result = sut.generate();
+
+
+    // Assert
+    expect(result[49]).toBeDefined();
+    expect(result[50]).toBeUndefined();
+
   });
 });
