@@ -58,6 +58,24 @@ describe(BowlingGame, () => {
     const score = sut.getScore();
 
     // assert
-    expect(score).toBe(30);
+    expect(score).toBe(1);
+  });
+
+  it("should not add bonus", () => {
+    // arrange
+    const sut = new BowlingGame();
+
+    // act
+    sut.roll(1)
+    sut.roll(8)
+
+    for (let i = 0; i < 18; i++) {
+      sut.roll(1);
+    }
+
+    const score = sut.getScore();
+
+    // assert
+    expect(score).toBe(1);
   });
 });

@@ -5,19 +5,30 @@ export class BowlingGame {
     this.try = 0;
   }
 
-  score: number;
-  frames: number[];
-  actualFrame: number;
-  try: number;
+  private score: number;
+  private frames: number[];
+  private actualFrame: number;
+  private try: number;
 
   roll(pins) {
     this.frames[this.actualFrame] += pins;
 
     if (this.frames[this.actualFrame + 1] === 0) {
       this.resetFrame();
+    } else {
+      this.frames = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1];
+      this.actualFrame = 0;
+      this.try = 0;
     }
 
-    this.try++;
+    if (this.try === 1) {
+      this.actualFrame++;
+      this.try = 0;
+    }
+    else{
+      this.try++;
+    }
+
   }
 
   getScore() {
@@ -31,8 +42,6 @@ export class BowlingGame {
         this.addBonus();
       }
     }
-
-    this.actualFrame++;
   }
 
   private addBonus() {
