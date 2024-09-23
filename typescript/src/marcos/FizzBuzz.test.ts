@@ -34,4 +34,15 @@ describe(FizzBuzz, () => {
     // Assert
     expect(result[1]).toBe(1);
   });
+
+  it("should return Buzz", () => {
+    // Arrange
+    const sut = new FizzBuzz();
+
+    // Act
+    const result = sut.generate();
+
+    // Assert
+    expect(result[5]).toBe("Buzz");
+  });
 });

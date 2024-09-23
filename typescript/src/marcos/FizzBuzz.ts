@@ -10,8 +10,14 @@ export class FizzBuzz {
   generate() {
     return Array.from({ length: this.max - this.min + 1 }, (_,n) => {
       
-      if (n % 3 === 0) {
+      let multipleOf3 = n % 3 === 0;
+      if (multipleOf3) {
         return "Fizz";
+      }
+
+      let multipleOf5 = n % 5 === 0;
+      if (multipleOf5) {
+        return "Buzz";
       }
 
       return n
