@@ -144,15 +144,14 @@ describe(FizzBuzz, () => {
     expect(result[4]).toBe("Less");
   });
 
-  it("should return PizzLess", () => {
+  it("should return FTW", () => {
     // Arrange
     const sut = new FizzBuzz();
-    sut.setMultipleOf3Text("Pizz");
-    sut.setMultipleOf5Text("Less");
+
     // Act
     const result = sut.generate();
 
     // Assert
-    expect(result[14]).toBe("PizzLess")
+    expect(result[14]).toBe("FTW")
   });
 });
