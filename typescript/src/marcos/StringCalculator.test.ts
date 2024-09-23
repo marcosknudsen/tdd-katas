@@ -9,6 +9,8 @@ describe(StringCalculator, () => {
     const result = stringCalculator.add("");
 
     // assert
-    // expect(result).toEqual(0);
+    expect(result).toEqual(0);
+  });
+
   });
 });
