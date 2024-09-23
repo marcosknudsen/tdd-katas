@@ -9,7 +9,7 @@ describe(FizzBuzz, () => {
     const result = sut.generate();
 
     // Assert
-    // expect(result).toBeInstanceOf(Array);
-    // expect(result).toHaveLength(100);
+    expect(result).toBeInstanceOf(Array);
+    expect(result).toHaveLength(100);
   });
 });
