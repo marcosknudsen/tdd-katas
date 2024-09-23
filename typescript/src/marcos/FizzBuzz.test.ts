@@ -57,18 +57,17 @@ describe(FizzBuzz, () => {
     expect(result[14]).toBe("FizzBuzz");
   });
 
-  it("should return an array with length 50", () => {
+  it("should return an array ending with 50", () => {
     // Arrange
     const sut = new FizzBuzz();
     sut.setMax(50);
     // Act
     const result = sut.generate();
 
-
     // Assert
-    expect(result[49]).toBeDefined();
+    expect(result[48]).toBe(49);
+    expect(result[49]).toBe("Buzz");
     expect(result[50]).toBeUndefined();
-
   });
 
   it("should return an array starting wit 15", () => {
