@@ -42,4 +42,22 @@ describe(BowlingGame, () => {
     // assert
     expect(score).toBe(10);
   });
+
+  it("should add 1 bonus", () => {
+    // arrange
+    const sut = new BowlingGame();
+
+    // act
+    sut.roll(1)
+    sut.roll(9)
+
+    for (let i = 0; i < 20; i++) {
+      sut.roll(1);
+    }
+
+    const score = sut.getScore();
+
+    // assert
+    expect(score).toBe(30);
+  });
 });
