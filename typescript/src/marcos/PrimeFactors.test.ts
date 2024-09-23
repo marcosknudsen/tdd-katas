@@ -33,4 +33,15 @@ describe(PrimeFactors, () => {
     // assert
     expect(result).toEqual([3]);
   });
+
+  it("should return [2, 2] when number is 4", () => {
+    // arrange
+    const sut = new PrimeFactors();
+
+    // act
+    const result = sut.generate(4);
+
+    // assert
+    expect(result).toEqual([2, 2]);
+  });
 });
