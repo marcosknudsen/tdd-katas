@@ -8,6 +8,13 @@ export class FizzBuzz {
   min: number;
 
   generate() {
-    return Array.from({ length: this.max - this.min + 1 }, (n) => n);
+    return Array.from({ length: this.max - this.min + 1 }, (_,n) => {
+      
+      if (n % 3 === 0) {
+        return "Fizz";
+      }
+
+      return n
+    });
   }
 }

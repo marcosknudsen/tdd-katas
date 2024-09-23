@@ -12,4 +12,15 @@ describe(FizzBuzz, () => {
     expect(result).toBeInstanceOf(Array);
     expect(result).toHaveLength(100);
   });
+
+  it("should return Fizz", () => {
+    // Arrange
+    const sut = new FizzBuzz();
+
+    // Act
+    const result = sut.generate();
+
+    // Assert
+    expect(result[3]).toBe("Fizz");
+  });
 });
