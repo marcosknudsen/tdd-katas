@@ -13,6 +13,6 @@ describe(BowlingGame, () => {
     const score = sut.getScore();
 
     // assert
-    // expect(score).toBe(0);
+    expect(score).toBe(0);
   });
 });

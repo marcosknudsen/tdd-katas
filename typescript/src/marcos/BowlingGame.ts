@@ -1,9 +1,13 @@
 export class BowlingGame {
-  constructor() {}
+  constructor() {
+    this.score=0;
+  }
+
+  score: number;
 
   roll(pins) {}
 
   getScore() {
-    return null;
+    return this.score;
   }
 }
