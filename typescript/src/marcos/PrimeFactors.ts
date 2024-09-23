@@ -1,10 +1,24 @@
 export class PrimeFactors {
   constructor() {}
 
-  generate(number) {
-    if (number === 1) {
-      return [];
+  generate(number: number) {
+    let factors = [];
+
+    for (let i = 2; i <= number; i++) {
+      if (this.isPrime(i)) {
+        factors.push(i);
+      }
     }
-    return null;
+
+    return factors;
+  }
+
+  private isPrime(number: number) {
+    for (let i = 2; i < number; i++) {
+      if (number % i === 0) {
+        return false;
+      }
+    }
+    return number > 1;
   }
 }
