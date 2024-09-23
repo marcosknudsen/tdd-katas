@@ -7,6 +7,10 @@ export class FizzBuzz {
   max: number;
   min: number;
 
+  setMax(max: number) {
+    this.max = max;
+  }
+
   generate() {
     return Array.from({ length: this.max - this.min + 1 }, (_,n) => {
       

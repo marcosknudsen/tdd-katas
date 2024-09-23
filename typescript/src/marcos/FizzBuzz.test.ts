@@ -56,4 +56,17 @@ describe(FizzBuzz, () => {
     // Assert
     expect(result[15]).toBe("FizzBuzz");
   });
+
+  it("should return an array with length 50", () => {
+    // Arrange
+    const sut = new FizzBuzz();
+    sut.setMax(50);
+    // Act
+    const result = sut.generate();
+
+
+    // Assert
+    expect(result).toBeInstanceOf(Array);
+    expect(result).toHaveLength(50);
+  });
 });
