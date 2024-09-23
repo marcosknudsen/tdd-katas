@@ -9,6 +9,6 @@ describe(Diamond, () => {
     const result = diamond.print("A");
 
     // assert
-    // expect(result).toEqual("A");
+    expect(result).toEqual("A");
   });
 });
