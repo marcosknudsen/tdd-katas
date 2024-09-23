@@ -23,6 +23,10 @@ export class FizzBuzz {
       let multipleOf5 = n % 5 === 0;
 
       if (n === 7){
+        return "Foo";
+      }
+
+      if (n === 11){
         return "Boo";
       }
       

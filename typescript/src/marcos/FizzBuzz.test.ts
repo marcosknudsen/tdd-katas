@@ -82,13 +82,23 @@ describe(FizzBuzz, () => {
     expect(result[1]).toBe(16);
   });
   
-  it("should return an array starting wit 15", () => {
+  it("should return Foo", () => {
     // Arrange
     const sut = new FizzBuzz();
     // Act
     const result = sut.generate();
 
     // Assert
-    expect(result[6]).toBe("Boo");
+    expect(result[6]).toBe("Foo");
+  });
+
+  it("should return Boo", () => {
+    // Arrange
+    const sut = new FizzBuzz();
+    // Act
+    const result = sut.generate();
+
+    // Assert
+    expect(result[10]).toBe("Boo");
   });
 });
