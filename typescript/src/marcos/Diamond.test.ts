@@ -33,4 +33,15 @@ describe(Diamond, () => {
     // assert
     expect(result).toEqual("  A/n B B/nC   C/n B B/n  A");
   });
+
+  it("should return a diamond with A, B, C and D", () => {
+    // arrange
+    const diamond = new Diamond();
+
+    // act
+    const result = diamond.print("D");
+
+    // assert
+    expect(result).toEqual("   A/n  B B/n C   C/nD     D/n C   C/n  B B/n   A");
+  });
 });
