@@ -5,7 +5,9 @@ export class BowlingGame {
 
   score: number;
 
-  roll(pins) {}
+  roll(pins) {
+    this.score += pins;
+  }
 
   getScore() {
     return this.score;
