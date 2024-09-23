@@ -24,7 +24,7 @@ describe(FizzBuzz, () => {
     expect(result[2]).toBe("Fizz");
   });
 
-  it("should return 1", () => {
+  it("should return Small", () => {
     // Arrange
     const sut = new FizzBuzz();
 
@@ -32,7 +32,7 @@ describe(FizzBuzz, () => {
     const result = sut.generate();
 
     // Assert
-    expect(result[0]).toBe(1);
+    expect(result[0]).toBe("Small");
   });
 
   it("should return Buzz", () => {
@@ -112,13 +112,13 @@ describe(FizzBuzz, () => {
     expect(result[76]).toBe("FooBoo");
   });
 
-  it("should return Small", () => {
+  it("should return Big", () => {
     // Arrange
     const sut = new FizzBuzz();
     // Act
     const result = sut.generate();
 
     // Assert
-    expect(result[15]).toBe("FooBoo");
+    expect(result[96]).toBe("Big");
   });
 });

@@ -49,6 +49,10 @@ export class FizzBuzz {
       if (n < 16){
         return "Small"
       }
+
+      if (n > 95){
+        return "Big"
+      }
       
       return n
     });
