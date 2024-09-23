@@ -20,6 +20,6 @@ describe(Diamond, () => {
     const result = diamond.print("B");
 
     // assert
-    expect(result).toEqual(" A/nB B");
+    expect(result).toEqual(" A/nB B/nB B/n A");
   });
 });

@@ -4,12 +4,24 @@ export class Diamond {
   constructor() {}
 
   print(letter) {
-    let result = "";
 
-    for (let i = 65; i <= letter.charCodeAt(0); i++) {
-      result +=
-        " ".repeat(letter.charCodeAt(0) - 65) + String.fromCharCode(i) + "/n";
+    if (letter === "A") {
+      return "A";
     }
+
+    let result = " ".repeat(letter.charCodeAt(0) - 65)  + "A/n";
+
+    for (let i = 66; i <= letter.charCodeAt(0); i++) {
+      result +=
+        " ".repeat(letter.charCodeAt(0) - 66) + String.fromCharCode(i) + " ".repeat(i-65) + String.fromCharCode(i) + "/n";
+    }
+
+    for (let i = letter.charCodeAt(0); i >= 66; i--) {
+      result +=
+        " ".repeat(letter.charCodeAt(0) - 66) + String.fromCharCode(i) + " ".repeat(i-65) + String.fromCharCode(i) + "/n";
+    }
+
+    result += " ".repeat(letter.charCodeAt(0) - 65)  + "A";
 
     return result;
   }
