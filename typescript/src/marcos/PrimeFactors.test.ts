@@ -9,6 +9,6 @@ describe(PrimeFactors, () => {
     const result = sut.generate(1);
 
     // assert
-    // expect(result).toEqual([]);
+    expect(result).toEqual([]);
   });
 });
