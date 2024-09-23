@@ -81,4 +81,14 @@ describe(FizzBuzz, () => {
     expect(result[0]).toBe("FizzBuzz");
     expect(result[1]).toBe(16);
   });
+  
+  it("should return an array starting wit 15", () => {
+    // Arrange
+    const sut = new FizzBuzz();
+    // Act
+    const result = sut.generate();
+
+    // Assert
+    expect(result[6]).toBe("Boo");
+  });
 });
