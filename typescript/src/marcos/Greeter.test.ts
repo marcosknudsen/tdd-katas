@@ -22,4 +22,16 @@ describe(Greeter, () => {
     // assert
     expect(result).toBe("Hello Mauro");
   });
+
+  it("should trim name", () => {
+    // arrange
+    const greeter = new Greeter();
+
+    // act
+    const result = greeter.greet(" mauro ");
+
+    // assert
+    expect(result).toBe("Hello Mauro");
+  });
+
 });
