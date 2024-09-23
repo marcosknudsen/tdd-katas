@@ -28,4 +28,18 @@ describe(BowlingGame, () => {
     // assert
     expect(score).toBe(1);
   });
+
+  it("should score 10 in a gutter game", () => {
+    // arrange
+    const sut = new BowlingGame();
+
+    // act
+    sut.roll(1)
+    sut.roll(9)
+
+    const score = sut.getScore();
+
+    // assert
+    expect(score).toBe(10);
+  });
 });

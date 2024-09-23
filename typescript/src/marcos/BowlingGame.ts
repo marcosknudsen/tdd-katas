@@ -1,15 +1,18 @@
 export class BowlingGame {
   constructor() {
-    this.score=0;
+    this.frames = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    this.actualFrame = 0;
   }
 
   score: number;
+  frames: number[];
+  actualFrame: number;
 
   roll(pins) {
-    this.score += pins;
+    this.frames[this.actualFrame] += pins;
   }
 
   getScore() {
-    return this.score;
+    return this.frames[this.actualFrame];
   }
 }
