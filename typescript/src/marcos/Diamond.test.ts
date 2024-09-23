@@ -11,4 +11,15 @@ describe(Diamond, () => {
     // assert
     expect(result).toEqual("A");
   });
+
+  it("should return a diamond with A and B", () => {
+    // arrange
+    const diamond = new Diamond();
+
+    // act
+    const result = diamond.print("B");
+
+    // assert
+    expect(result).toEqual(" A/nB B");
+  });
 });
