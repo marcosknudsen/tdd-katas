@@ -3,11 +3,13 @@ export class FizzBuzz {
     this.max = 100;
     this.min = 1;
     this.multipleOf3Text = "Fizz";
+    this.multipleOf5Text = "Buzz";
   }
 
   max: number;
   min: number;
   multipleOf3Text: string;
+  multipleOf5Text: string;
 
   setMax(max: number) {
     this.max = max;
@@ -19,6 +21,10 @@ export class FizzBuzz {
 
   setMultipleOf3Text(text: string) {
     this.multipleOf3Text = text;
+  }
+
+  setMultipleOf5Text(text: string) {
+    this.multipleOf5Text = text;
   }
 
   generate() {
@@ -41,7 +47,7 @@ export class FizzBuzz {
       }
       
       if (multipleOf3 && multipleOf5) {
-        return "FizzBuzz";
+        return this.multipleOf3Text + this.multipleOf5Text;
       }
       
       if (multipleOf3) {
@@ -49,7 +55,7 @@ export class FizzBuzz {
       }
       
       if (multipleOf5) {
-        return "Buzz";
+        return this.multipleOf5Text;
       }
 
       if (n < 16){
