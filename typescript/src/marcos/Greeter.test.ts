@@ -9,6 +9,6 @@ describe(Greeter, () => {
     const result = greeter.greet("Mauro");
 
     // assert
-    // expect(result).toBe("Hello Mauro");
+    expect(result).toBe("Hello Mauro");
   });
 });
