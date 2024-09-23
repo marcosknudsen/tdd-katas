@@ -77,4 +77,15 @@ describe(PrimeFactors, () => {
     // assert
     expect(result).toEqual([7]);
   });
+
+  it("should return [2, 2, 2] when number is 8", () => {
+    // arrange
+    const sut = new PrimeFactors();
+
+    // act
+    const result = sut.generate(8);
+
+    // assert
+    expect(result).toEqual([2, 2, 2]);
+  });
 });
