@@ -11,4 +11,15 @@ describe(Greeter, () => {
     // assert
     expect(result).toBe("Hello Mauro");
   });
+
+  it("should capitalice first letter", () => {
+    // arrange
+    const greeter = new Greeter();
+
+    // act
+    const result = greeter.greet("mauro");
+
+    // assert
+    expect(result).toBe("Hello Mauro");
+  });
 });
