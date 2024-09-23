@@ -49,13 +49,9 @@ export class FizzBuzz {
       if (multipleOf3 && multipleOf5) {
         return "FTW";
       }
-      
-      if (multipleOf3) {
-        return this.multipleOf3Text;
-      }
-      
-      if (multipleOf5) {
-        return this.multipleOf5Text;
+
+      if (multipleOf3 || multipleOf5) {
+        return "GG";
       }
 
       if (n < 16){

@@ -21,7 +21,7 @@ describe(FizzBuzz, () => {
     const result = sut.generate();
 
     // Assert
-    expect(result[2]).toBe("Fizz");
+    expect(result[2]).toBe("GG");
   });
 
   it("should return Small", () => {
@@ -43,18 +43,7 @@ describe(FizzBuzz, () => {
     const result = sut.generate();
 
     // Assert
-    expect(result[4]).toBe("Buzz");
-  });
-
-  it("should return FizzBuzz", () => {
-    // Arrange
-    const sut = new FizzBuzz();
-
-    // Act
-    const result = sut.generate();
-
-    // Assert
-    expect(result[14]).toBe("FizzBuzz");
+    expect(result[4]).toBe("GG");
   });
 
   it("should return an array ending with 50", () => {
@@ -66,7 +55,7 @@ describe(FizzBuzz, () => {
 
     // Assert
     expect(result[48]).toBe(49);
-    expect(result[49]).toBe("Buzz");
+    expect(result[49]).toBe("GG");
     expect(result[50]).toBeUndefined();
   });
 
@@ -78,7 +67,7 @@ describe(FizzBuzz, () => {
     const result = sut.generate();
 
     // Assert
-    expect(result[0]).toBe("FizzBuzz");
+    expect(result[0]).toBe("FTW");
     expect(result[1]).toBe(16);
   });
   
@@ -120,28 +109,6 @@ describe(FizzBuzz, () => {
 
     // Assert
     expect(result[96]).toBe("Big");
-  });
-
-  it("should return Pizz", () => {
-    // Arrange
-    const sut = new FizzBuzz();
-    sut.setMultipleOf3Text("Pizz");
-    // Act
-    const result = sut.generate();
-
-    // Assert
-    expect(result[2]).toBe("Pizz");
-  });
-
-  it("should return Less", () => {
-    // Arrange
-    const sut = new FizzBuzz();
-    sut.setMultipleOf5Text("Less");
-    // Act
-    const result = sut.generate();
-
-    // Assert
-    expect(result[4]).toBe("Less");
   });
 
   it("should return FTW", () => {
