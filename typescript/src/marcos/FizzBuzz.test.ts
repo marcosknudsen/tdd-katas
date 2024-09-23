@@ -111,4 +111,14 @@ describe(FizzBuzz, () => {
     // Assert
     expect(result[76]).toBe("FooBoo");
   });
+
+  it("should return Small", () => {
+    // Arrange
+    const sut = new FizzBuzz();
+    // Act
+    const result = sut.generate();
+
+    // Assert
+    expect(result[15]).toBe("FooBoo");
+  });
 });

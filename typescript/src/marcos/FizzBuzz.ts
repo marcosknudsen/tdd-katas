@@ -25,11 +25,11 @@ export class FizzBuzz {
       if (n % 7 === 0 && n % 11 === 0){
         return "FooBoo";
       }
-
+      
       if (n === 7){
         return "Foo";
       }
-
+      
       if (n === 11){
         return "Boo";
       }
@@ -37,15 +37,19 @@ export class FizzBuzz {
       if (multipleOf3 && multipleOf5) {
         return "FizzBuzz";
       }
-
+      
       if (multipleOf3) {
         return "Fizz";
       }
-
+      
       if (multipleOf5) {
         return "Buzz";
       }
 
+      if (n < 16){
+        return "Small"
+      }
+      
       return n
     });
   }
