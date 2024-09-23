@@ -11,6 +11,10 @@ export class FizzBuzz {
     this.max = max;
   }
 
+  setMin(min: number) {
+    this.min = min;
+  }
+
   generate() {
     return Array.from({ length: this.max - this.min + 1 }, (_,n) => {
       n += this.min;

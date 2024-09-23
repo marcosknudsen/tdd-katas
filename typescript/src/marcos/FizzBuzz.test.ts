@@ -70,4 +70,16 @@ describe(FizzBuzz, () => {
     expect(result[50]).toBeUndefined();
 
   });
+
+  it("should return an array starting wit 15", () => {
+    // Arrange
+    const sut = new FizzBuzz();
+    sut.setMin(15);
+    // Act
+    const result = sut.generate();
+
+    // Assert
+    expect(result[0]).toBe("FizzBuzz");
+    expect(result[1]).toBe(16);
+  });
 });
